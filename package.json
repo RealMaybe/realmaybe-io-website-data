@@ -1,0 +1,22 @@
+{
+    "name": "realmaybe-io-website-data",
+    "version": "0.0.1-beta",
+    "license": "UNLICENSED",
+    "description": "Raw data for RealMaybe's GitHub Pages site",
+    "author": "RealMaybe <realmaybe0429@qq.com>",
+    "keywords": [
+        "realmaybe",
+        "github-pages",
+        "data",
+        "static"
+    ],
+    "packageManager": "pnpm@10.19.0",
+    "main": "command/index.js",
+    "scripts": {
+        "build": "node command/index.js"
+    },
+    "dependencies": {
+        "dayjs": "^1.11.18",
+        "gray-matter": "^4.0.3"
+    }
+}

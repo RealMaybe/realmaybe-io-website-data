@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+.nfs*
+
+# VS Code / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.env
+venv/
+
+# 密钥 & 敏感文件
+*.pem
+*.key
+*.token
+config.secret.json
+.env.local
+
+# 临时 / 备份
+*.tmp
+*.bak
+*.log
+
+# 个人超大文件
+*.zip
+*.mp4
+*.sketch
+
+# 本地笔记，不上传
+private/
+TODO.md
