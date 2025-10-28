@@ -1,5 +1,7 @@
 // command/lib/config.js
 
+const outFile = "data/docs.json"
+
 export const CONFIG = Object.freeze({
     // GitHub 信息
     userName: "RealMaybe",
@@ -9,7 +11,7 @@ export const CONFIG = Object.freeze({
     // 路径配置
     docsDir: "documents", // 相对根目录
     outDir: "data",
-    outFile: "data/docs.json",
+    outFile,
 
     // 特殊条目配置
     specialEntries: {
@@ -18,7 +20,7 @@ export const CONFIG = Object.freeze({
             title: "Document Index",
             description: "This JSON file contains all document metadata.",
             type: "system",
-            path: "data/index.json",
+            path: outFile,
         },
     },
 });
