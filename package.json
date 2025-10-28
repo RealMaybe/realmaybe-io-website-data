@@ -12,11 +12,15 @@
     ],
     "packageManager": "pnpm@10.19.0",
     "main": "command/index.js",
+    "type": "module",
     "scripts": {
-        "build": "node command/index.js"
+        "start": "node command/index.js"
     },
     "dependencies": {
         "dayjs": "^1.11.18",
         "gray-matter": "^4.0.3"
+    },
+    "devDependencies": {
+        "npm-run-all2": "^8.0.4"
     }
 }

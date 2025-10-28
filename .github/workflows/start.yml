@@ -1,0 +1,36 @@
+name: start
+
+on:
+    push:
+        branches: [main] # 默认分支
+    workflow_dispatch: # 手动触发
+
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write # ← 关键
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }} # 默认就有写权限
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+                  cache: pnpm
+
+            - uses: pnpm/action-setup@v4
+              with:
+                  version: 10.19.0
+
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm start # 产生新文件
+
+            - name: Commit & push back
+              run: |
+                  git config user.name  "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git add .
+                  git diff --staged --quiet || git commit -m "ci: auto-update generated data"
+                  git push
