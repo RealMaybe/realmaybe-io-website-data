@@ -3,7 +3,7 @@
 export const CONFIG = Object.freeze({
     // GitHub 信息
     userName: "RealMaybe",
-    repoName: "RealMaybe",
+    repoName: "realmaybe-io-website-data",
     branch: "main",
 
     // 路径配置
