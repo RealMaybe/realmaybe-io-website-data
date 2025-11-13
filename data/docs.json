@@ -1,0 +1,59 @@
+[
+    {
+        "slug": "self",
+        "title": "Document Index",
+        "description": "This JSON file contains all document metadata.",
+        "type": "system",
+        "path": "data/docs.json",
+        "link": "https://raw.githubusercontent.com/RealMaybe/realmaybe-io-website-data/main/data/docs.json",
+        "generatedAt": 1763052489949
+    },
+    {
+        "slug": "2025-11-14",
+        "title": "综合测试文档",
+        "description": "综合测试文档",
+        "date": {
+            "created": "2025-11-14",
+            "updated": "2025-11-14",
+            "revisions": 1
+        },
+        "tags": [],
+        "link": "https://raw.githubusercontent.com/RealMaybe/realmaybe-io-website-data/main/documents/2025-11-14.md"
+    },
+    {
+        "slug": "2025-11-13",
+        "title": "测试文档",
+        "description": "用于测试打包结果",
+        "date": {
+            "created": "2025-11-13",
+            "updated": "2025-11-14",
+            "revisions": 1
+        },
+        "tags": [],
+        "link": "https://raw.githubusercontent.com/RealMaybe/realmaybe-io-website-data/main/documents/2025-11-13.md"
+    },
+    {
+        "slug": "2025-10-28",
+        "title": "测试文档",
+        "description": "用于测试打包结果",
+        "date": {
+            "created": "2025-10-28",
+            "updated": "2025-10-28",
+            "revisions": 1
+        },
+        "tags": [],
+        "link": "https://raw.githubusercontent.com/RealMaybe/realmaybe-io-website-data/main/documents/2025-10-28.md"
+    },
+    {
+        "slug": "2025-10-27",
+        "title": "测试文档",
+        "description": "用于测试打包结果",
+        "date": {
+            "created": "2025-10-27",
+            "updated": "2025-10-28",
+            "revisions": 2
+        },
+        "tags": [],
+        "link": "https://raw.githubusercontent.com/RealMaybe/realmaybe-io-website-data/main/documents/2025-10-27.md"
+    }
+]
