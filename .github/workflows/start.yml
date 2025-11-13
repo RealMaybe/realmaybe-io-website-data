@@ -38,5 +38,5 @@ jobs:
                   git config user.name  "github-actions[bot]"
                   git config user.email "github-actions[bot]@users.noreply.github.com"
                   git add .
-                  COMMIT_MSG="ci: 更新生成的数据 $(date -u '+%F %T')"
+                  COMMIT_MSG="ci: 更新自动生成的数据，更新时间：北京时间 $(TZ=Asia/Shanghai date '+%F %T')"
                   git diff --staged --quiet || (git commit -m "$COMMIT_MSG" && git push)
